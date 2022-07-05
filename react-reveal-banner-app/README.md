@@ -1,0 +1,7 @@
+- Reference
+  - [animista](https://animista.net/)
+  - [emotion keyframes](https://emotion.sh/docs/keyframes)
+  - [grid image](https://jsfiddle.net/xq4m62Lq/)
+  - [GridLoadingAnimations](https://tympanus.net/Development/GridLoadingAnimations/)
+  - [css-vs-javascript](https://web.dev/css-vs-javascript/)
+  - [sample](https://codesandbox.io/s/m2zl2)

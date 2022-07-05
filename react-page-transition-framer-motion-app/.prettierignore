@@ -1,0 +1,9 @@
+.eslintignore
+.gitignore
+.nodeversion
+.npmversion
+.prettierignore
+.stylelintignore
+yarn.lock
+*ico
+src/assets

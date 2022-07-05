@@ -1,0 +1,7 @@
+- Reference
+  - [React の新しい概念「トランジション」で React アプリの応答性を改善する](https://numb86-tech.hatenablog.com/entry/2022/01/02/225402)
+  - [react18-usetransition](https://codesandbox.io/s/react18-usetransition-ur8v6b)
+  - [animations-with-useTransition](https://github.com/brunoapollon/animations-with-useTransition)
+  - [react-spring-page-transition](https://codesandbox.io/s/5yzw5x0wyl?file=/src/index.js)
+  - [how-can-i-use-react-spring-usetransition-to-go-from-left-to-right-or-viceversa](https://stackoverflow.com/questions/66399995/how-can-i-use-react-spring-usetransition-to-go-from-left-to-right-or-viceversa)
+  - [page-transitions-creative-examples-resources-and-some-tips](https://www.awwwards.com/page-transitions-creative-examples-resources-and-some-tips.html)

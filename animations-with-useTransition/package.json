@@ -1,0 +1,62 @@
+{
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint -c .eslintrc.json \"{,!(node_modules|dist|build)/**/}*.js\" --fix",
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\""
+  },
+  "dependencies": {
+    "@emotion/css": "^11.9.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/kaushan-script": "^4.5.7",
+    "@mui/material": "^5.6.3",
+    "dayjs": "^1.11.1",
+    "framer-motion": "^6.3.3",
+    "gsap": "^3.10.4",
+    "locomotive-scroll": "^4.1.4",
+    "normalize.css": "^8.0.1",
+    "react": "^18.1.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^18.1.0",
+    "react-locomotive-scroll": "^0.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-spring": "^9.4.4",
+    "styled-components": "^5.3.5",
+    "throttle-debounce": "^4.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.6.2",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.51.0",
+    "serve": "^13.0.2",
+    "stylelint": "^14.8.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "typescript": "^4.6.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

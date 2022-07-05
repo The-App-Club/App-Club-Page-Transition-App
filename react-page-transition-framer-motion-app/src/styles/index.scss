@@ -1,0 +1,273 @@
+$main: #f0d8bb;
+$white: #ffffff;
+$black: #1e1f13;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+body {
+  background-color: $main;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  &:before {
+    animation: grain 8s steps(10) infinite;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png');
+    content: '';
+    height: 300%;
+    left: -50%;
+    opacity: 0.3;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+  }
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+//Header
+
+.container {
+  flex-grow: 1;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  width: auto;
+  &.fluid {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1216px) {
+    max-width: 1152px;
+  }
+  @media (min-width: 1408px) {
+    max-width: 1560px;
+  }
+
+  .row {
+    align-items: center;
+    display: flex;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.center {
+      justify-content: center;
+    }
+  }
+}
+
+header {
+  font-size: 16px;
+  font-weight: '700';
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  .container {
+    .row {
+      height: 128px;
+      .logo {
+        a {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+      .menu {
+        align-items: center;
+        border: 1px solid $black;
+        border-radius: 100%;
+        cursor: pointer;
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        width: 80px;
+        &:hover {
+          background: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    position: relative;
+    .row {
+      align-items: center;
+      height: 100vh;
+      .image-container {
+        position: relative;
+        .thumbnail {
+          overflow: hidden;
+          position: relative;
+          .frame {
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .information {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          position: absolute;
+          text-transform: uppercase;
+          width: 100%;
+          .location {
+            span:nth-child(2) {
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//single
+.single {
+  .container {
+    .top-row {
+      align-items: flex-end;
+      height: 50vh;
+      width: 100%;
+      .top {
+        padding-bottom: 40px;
+        .details {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          .location {
+            span:nth-child(2) {
+              margin-left: 16px;
+            }
+          }
+          .mua {
+            text-transform: uppercase;
+          }
+        }
+        .model {
+          overflow: hidden;
+          .first {
+            margin-right: 72px;
+          }
+          span {
+            display: inline-block;
+            font-size: 224px;
+            font-weight: 400;
+            position: relative;
+            @media (max-width: 1440px) {
+              font-size: 128px;
+            }
+          }
+        }
+      }
+    }
+    .bottom-row {
+      height: 50vh;
+      position: relative;
+      .bottom {
+        height: 100%;
+        width: 100%;
+        .thumbnail-single {
+          height: 800px;
+          left: 0;
+          margin: 0 auto;
+          overflow: hidden;
+          position: absolute;
+          right: 0;
+          width: 100%;
+          .frame-single {
+            img {
+              position: absolute;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .scroll-for-more {
+        bottom: 200px;
+        left: 200px;
+        position: absolute;
+        z-index: 20;
+        .icon {
+          svg {
+            height: auto;
+            width: 28px;
+          }
+        }
+        .text {
+          color: $white;
+          margin-top: 8px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.detailed-information {
+  height: 600px;
+  margin-top: 200px;
+  .container {
+    .row {
+      align-items: flex-start;
+      justify-content: space-between;
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16;
+        font-weight: 400;
+        line-height: 28px;
+        width: 800px;
+      }
+    }
+  }
+}
